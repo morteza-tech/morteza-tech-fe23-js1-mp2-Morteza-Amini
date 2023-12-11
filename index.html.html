@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sten-Sax-Påse</title>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Sten-Sax-Påse</h1>
+    <form id="gameForm">
+      <label for="playerName"> Name: </label>
+      <input type="text" id="playerName" placeholder="Your Name" required>
+      <button type="submit" id="startBtn">Start Game</button>
+    </form>
+    <div id="game" class="hidden">
+      <div id="result"></div>
+      <div id="score">
+        <p id="playerScore">Player: 0</p>
+        <p id="computerScore">Computer: 0</p>
+      </div>
+      <div id="choices">
+        <button class="choice" id="sten">sten</button>
+        <button class="choice" id="påse">påse</button>
+        <button class="choice" id="sax">sax</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
